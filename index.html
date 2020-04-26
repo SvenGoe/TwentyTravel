@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TwentyTravel</title>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="mb"></div>
+	<div class="container ">
+		<div class="row">
+			<img src="cover.png" alt="Logo" width="175" height="72" id="cover">
+			<div class="buffer col-12"></div> 
+			<header class="text-center col-12">
+				<h1><strong>Travel Planning Made Easy</strong></h1>
+			</header>
+			<section class="text-center col-12">
+				<hr>
+				
+				<p>Travel Itineraries</p>
+				<p>Pinned Google Maps</p>
+				<p>Picture Galleries</p>
+				<p>Recommendations</p>
+				<p>Personal Travel Insights</p>
+				
+				
+				<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="btn btn-primary btn-xl">FIND OUT MORE</button></a>
+			</section>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div class="container">
+		<div class="row1">
+			<h2><strong>What Vacation Type Are You Looking for?</strong></h2>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="Adventure.jpg"></button></a>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="Beach_small.jpg"></button></a>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="Outdoor_small.jpg"></button></a>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="RoadTrip_small.jpg"></button></a>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="City Sightseeing_small.jpg"></button></a>
+			<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="gb"><img class="gallary" src="Culture_small.jpg"></button></a>
+		</div>
+	</div>
+<!-- Adventure, Beach, Outdoor, City Sightseeing, Culture, Road Trip, Romance, Self Development-->
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row1">
+			<h2><strong>Where do you want to go?</strong></h2>
+			<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+			<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+			<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+			<div id="mapdiv" style="width: 935px; height: 445px;"></div>
+			<div style="width: 934px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #5B53DD; margin-top: 1px; color: #B4B4B7;"><a href="https://www.amcharts.com/visited_countries/" style="color: #B4B4B7;">Green-marked countries: We have been here and can offer our help!</a> <a href="https://www.amcharts.com/" style="color: #B4B4B7;"></a></div>
+			<script type="text/javascript">
+			var map = AmCharts.makeChart("mapdiv",{
+			type: "map",
+			theme: "dark",
+			projection: "mercator",
+			panEventsEnabled : true,
+			backgroundColor : "#5B53DD",
+			backgroundAlpha : 1,
+			zoomControl: {
+			zoomControlEnabled : true
+			},
+			dataProvider : {
+			map : "worldHigh",
+			getAreasFromMap : true,
+			areas :
+			[
+				{
+					"id": "AT",
+					"showAsSelected": true
+				},
+				{
+					"id": "CZ",
+					"showAsSelected": true
+				},
+				{
+					"id": "FR",
+					"showAsSelected": true
+				},
+				{
+					"id": "DE",
+					"showAsSelected": true
+				},
+				{
+					"id": "RO",
+					"showAsSelected": true
+				},
+				{
+					"id": "CH",
+					"showAsSelected": true
+				},
+				{
+					"id": "GB",
+					"showAsSelected": true
+				},
+				{
+					"id": "CA",
+					"showAsSelected": true
+				},
+				{
+					"id": "US",
+					"showAsSelected": true
+				},
+				{
+					"id": "EC",
+					"showAsSelected": true
+				},
+				{
+					"id": "PE",
+					"showAsSelected": true
+				},
+				{
+					"id": "CN",
+					"showAsSelected": true
+				},
+				{
+					"id": "HK",
+					"showAsSelected": true
+				},
+				{
+					"id": "ID",
+					"showAsSelected": true
+				},
+				{
+					"id": "MO",
+					"showAsSelected": true
+				},
+				{
+					"id": "PH",
+					"showAsSelected": true
+				},
+				{
+					"id": "SG",
+					"showAsSelected": true
+				},
+				{
+					"id": "TH",
+					"showAsSelected": true
+				},
+				{
+					"id": "VN",
+					"showAsSelected": true
+				}
+			]
+			},
+			areasSettings : {
+			autoZoom : true,
+			color : "#B4B4B7",
+			colorSolid : "#14E2B2",
+			selectedColor : "#14E2B2",
+			outlineColor : "#666666",
+			rollOverColor : "#B4B4B7",
+			rollOverOutlineColor : "#14E2B2"
+			}
+			});
+			</script>
+		</div>
+</div>
+<!--https://www.amcharts.com/visited_countries/#AT,CZ,FR,DE,RO,CH,GB,CA,US,EC,PE,CN,HK,ID,MO,PH,SG,TH,VN-->
+<br>
+<br>
+<br>
+<div class="row1">
+<a href="https://mailchi.mp/cee9e7825995/twentytravel"><button type="button" class="btn btn-primary btn-xl">START PLANNING WITH US NOW</button></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer>
+	<div class="container">
+  		<div class="row">
+    		<div class="col col-sm-8 col-md-9 col-lg-4"> 
+      			<h2 class="fh"><strong>About Us</strong></h2>
+      			<p class="us">After having visited almost 20 countries togehter as a couple, it is safe to say that we love traveling, even when it's just over a weekend. For us, traveling is a way to escape our demanding everyday-lifes and recharge. Via this website we hope to inspire others to do the same. Our goal is to minimize the stress and time needed to plan your next trip so that you can spend all the time you have enjoying whatever destination you may choose to visit. We wish you an experience you'll never forget!</p>
+      		</div>
+      		<div class="col col-sm-3 col-md-3 col-lg-2">
+      			<img src="Bali.jpg" alt="KaidlyneSven" width="150" height="239.33" id="footerimage" style="margin-top: 57px">
+    		</div>
+    		<div class="col col-sm-10 col-md-10 col-lg-5">
+      			<h2 class="fh"><strong>Contact Us</strong></h2>
+      				<div class="containerfooter">
+					  <form action="mailto:sven.goepfrich@gmail.com" method="POST" enctype="multipart/form-data" name="EmailTestForm">					  
+					    <input type="text" id="fname" name="firstname" placeholder="Your Name">					    
+					    <input type="text" id="lname" name="lastname" placeholder="Your Last Name">					   
+					   	<input type="Email" id="lname" name="lastname" placeholder="Your Email">					    
+					    <textarea id="subject" name="subject" placeholder="Your Text" style="height:50px"></textarea>					    
+					    <input type="submit" value="Submit">
+					  </form>
+					</div>
+			</div>
+			<div class="col col-sm-2 col-md-2 col-lg-1">
+				<h2 class="fh"><strong>Share</strong></h2>
+				<a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+				<br><br>
+				<a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+				<br><br>
+				<a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"><img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+			</div>
+ 		 </div>
+	</div>
+<br>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
